@@ -6,29 +6,29 @@ export type User = {
   email: string
 }
 
-// export type Product = {
-//   _id?: string
-//   url: string
-//   currency: string
-//   image: string
-//   title: string
-//   currentPrice: number
-//   originalPrice: number
-//   priceHistory: PriceHistoryItem[] | []
-//   highestPrice: number
-//   lowestPrice: number
-//   averagePrice: number
-//   discountRate: number
-//   description: string[]
-//   isOutOfStock: undefined
-//   category: string
-//   reviewsCount: string
-//   ratingsCount: number
-//   recentOrders: string
-//   brandtSince: string
-//   likes: string
-//   users?: User[]
-// }
+export type Product = {
+  _id?: string
+  url: string
+  currency: string
+  image: string
+  title: string
+  currentPrice: number
+  originalPrice: number
+  priceHistory: PriceHistoryItem[] | []
+  highestPrice: number
+  lowestPrice: number
+  averagePrice: number
+  discountRate: number
+  description: string[]
+  isOutOfStock: boolean
+  category: string
+  reviewsCount: string
+  ratingsCount: string
+  recentOrders: string
+  brandtSince: string
+  likes: string
+  users?: User[]
+}
 
 export type NotificationType =
   | "WELCOME"
